@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Lato", sans-serif;
 }
 
@@ -12,6 +12,11 @@ body {
 header {
   background-color: rgba(229, 84, 115, 0.1); 
   width: 100%;
+  overflow: hidden;
+}
+
+main{
+    background-color: #FFFFFF;
 }
 
 .max-width{
@@ -21,6 +26,7 @@ header {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 .btn-primary {
@@ -38,12 +44,15 @@ img {
   background-color: #bd425c;
 }
 
+.display-flex{
+    display: flex;
+}
+
 
 /* Hero section styles */
 
 .hero-container {
-  padding: 50px 20px 0;
-  display: flex;
+  padding: 50px 0 0;
   justify-content: space-between;
   align-items: center;
   gap: 97px;
@@ -53,7 +62,7 @@ img {
 
 .hero-content h2 {
   color: #272727;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
 }
 
@@ -64,30 +73,119 @@ img {
   margin: 32px 0;
 }
 
+
 @media screen and (max-width: 767.98px) {
   .hero-container {
     flex-direction: column;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
     gap: 40px;
   }
 
   .hero-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
-  img {
-    max-width: 80%;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width:1024px) {
     .hero-container{
         gap: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .hero-content h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   img{
     width: 90%;
   }
+}
+
+
+
+
+/* feature flower collage section  */
+
+
+.feature-flower-container{
+    margin-top: 178px;
+    margin-bottom: 30px; 
+}
+
+
+.feature-content{
+    max-width: 594px;
+    margin: 0 auto;
+    text-align: center ;
+}
+
+.feature-content h3{
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+.feature-content p{
+    font-size: 1.15rem;
+}
+
+.flowers-collage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 48px;
+    gap: 24px;
+}
+
+.flower-window{
+    height: 538px;
+    padding: 110px 76px 0;
+    border-radius: 50% 50% 0 0;
+    margin-bottom: 32px;
+}
+
+.first{
+    background-color: rgba(167, 33, 98, 0.15);
+}
+.second{
+    background-color: rgba(5, 151, 160, 0.15);
+}
+
+.third{
+    background-color: rgba(71, 125, 17, 0.15);
+}
+
+.flower-content{
+    text-align: center;
+}
+.flower-content a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #272727;
+}
+
+@media screen  and (max-width:767.98px){
+
+    .feature-flower-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flowers-collage{
+        grid-template-columns: repeat(1,1fr);
+        gap: 40px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .feature-flower-container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .flowers-collage{
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
 }
