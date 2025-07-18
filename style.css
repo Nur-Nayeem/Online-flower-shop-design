@@ -1,8 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgba(229, 84, 115, 0.1); 
+  width: 100%;
+}
+
+.max-width{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #E55473;
+  color: #FFFFFF;
+  padding: 20px 43px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #bd425c;
+}
+
+
+/* Hero section styles */
+
+.hero-container {
+  padding: 50px 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 97px;
+}
+
+
+
+.hero-content h2 {
+  color: #272727;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.hero-content p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 32px 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .hero-container{
+        gap: 50px;
+    }
+    .hero-content h2 {
+    font-size: 4rem;
+  }
+  img{
+    width: 90%;
+  }
 }
