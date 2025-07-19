@@ -52,6 +52,19 @@ img {
     display: flex;
 }
 
+.detail-text{
+    color: var(--dark3);
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.section-header{
+    font-size: 2.5rem;
+    color: var(--dark1);
+    font-weight: 800;
+}
+
 
 /* Hero section styles */
 
@@ -69,12 +82,6 @@ img {
     font-weight: 800;
 }
 
-.hero-content p {
-    color: var(--dark3);
-    font-size: 1.15rem;
-    font-weight: 400;
-    margin: 32px 0;
-}
 
 .hero-image img {
     max-width: 100%;
@@ -132,15 +139,7 @@ img {
     text-align: center;
 }
 
-.feature-content h3 {
-    font-size: 2rem;
-    margin-bottom: 24px;
-    font-weight: 800;
-}
 
-.feature-content p {
-    font-size: 1.15rem;
-}
 
 .flowers-collage {
     display: grid;
@@ -273,20 +272,11 @@ img {
     max-width: 600px;
 }
 
-.hot-deal-content h3{
-    font-size: 2.5rem;
-    color: var(--dark1);
-    font-weight: 800;
-}
 
 .off{
     color: #E55473;
 }
 
-.hot-deal-content p{
-    margin: 30px 0;
-    color: var(--dark3);
-}
 
 @media screen and (max-width:767.98px){
     .hot-deal-section{
@@ -296,4 +286,25 @@ img {
     }
 }
 
+
+
+/* insta section  */
+
+.insta-section{
+    margin-top: 128px;
+}
+
+.insta-content{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.insta-img-container{
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
 
