@@ -308,3 +308,58 @@ img {
     flex-wrap: wrap;
 }
 
+
+
+/* get the latest deal section  */
+.get-latest-deal-section{
+    margin-top: 128px;
+    background-image: url("./Flower Asset/Rectangle 9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+.get-latest-deal-container{
+    max-width: 870px;
+}
+
+.get-latest-deal-content{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.get-latest-deal-form{
+    align-items: center;
+    gap: 5px;
+}
+
+
+.get-latest-deal-form input{
+    width: 600px;
+    padding: 22px 22px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+@media screen and (max-width: 767.98px) {
+    .get-latest-deal-section{
+        padding: 0 10px;
+    }
+    .get-latest-deal-container{
+       padding: 50px 0;
+    }
+    .get-latest-deal-content p{
+        margin: 5px 0;
+    }
+    .get-latest-deal-form{
+        flex-direction: column;
+    }
+    .get-latest-deal-form input{
+        margin: 5px 0;
+        width: calc(100% - 20px);
+    }
+}
+
